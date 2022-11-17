@@ -16,13 +16,19 @@ const Advocateprof = () => {
         </div>
         <div className='right'>
             <div className='img-container'>
-                <img className='img' src='/images/img2.jpg'></img>
+                <img className='img' src='/images/female.jpg'></img>
             </div>
 
         </div>
     </div>
 
     <div className='about'>
+    <div className='right'>
+            <div className='img-container'>
+                <img className='img' src='/images/male.jpg'></img>
+            </div>
+
+        </div>
         <div className='left'>
             <h1>Samuel Wanjohi</h1>
             <p>I'm an advocate of the high court
@@ -31,12 +37,7 @@ const Advocateprof = () => {
             </p>
             
         </div>
-        <div className='right'>
-            <div className='img-container'>
-                <img className='img' src='/images/img2.jpg'></img>
-            </div>
-
-        </div>
+        
     </div>
     
 
