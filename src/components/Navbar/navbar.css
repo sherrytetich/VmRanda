@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,73 +7,80 @@
     width: 100%;
     height: 90px;
     z-index: 10;
-    background:#596CEF ;
+    background: #7c2acd; /* Presuming this is the navy blue color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds depth */
+    transition: background-color 0.3s; /* Smooth transition for any bg color change */
 }
-.img-logo{
+
+.img-logo {
     height: 80px;
     width: 100px;
-}
-.img-logo:hover{
-    height: 100px;
-    width: 120px;
-}
-.header-bg{
-    background:#596CEF ;
-    transition: 0.5s;
+    transition: transform 0.3s; /* Smooth scale transition */
 }
 
-.nav-menu{
+.img-logo:hover {
+    transform: scale(1.1); /* Use scale for smoother transitions */
+}
+
+.nav-menu {
     display: flex;
+    list-style: none; /* Remove bullet points from list */
 }
 
-.nav-menu li{
+.nav-menu li {
     padding: 0 1rem;
 }
 
-.nav-menu li a{
+.nav-menu li a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
+    color: #ffffff; /* Set a default text color */
+    transition: color 0.3s, font-size 0.3s; /* Smooth transitions for hover effects */
 }
-.nav-menu li a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
+
+.nav-menu li a:hover {
+    font-size: 1.3rem; /* Slightly increase font size on hover */
+    color: #1e1d1f; /* Purple accent color on hover */
 }
-.nav-menu li a:hover{
-    font-size: 1.6rem;
-    color: #9803fc;
-    cursor: pointer;
-}
-.hambugger{
+
+.hambugger {
     display: none;
 }
 
 @media screen and (max-width: 640px) {
-    .nav-menu{
+    .nav-menu {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100vh;
-        background:rgba(75, 38, 175, 1) ;
         position: absolute;
-        top: 0;
+        top: 90px; /* Align with the height of the header */
         left: -100%;
-        z-index: -3;
-        transition: 0.3s;
+        background: #553ca7; /* Keep consistent with the desktop background */
+        transition: left 0.3s; /* Smooth transition for the menu animation */
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         left: 0;
+        z-index: 1; /* Make sure menu is above other content */
     }
     
-    .nav-menu li{
+    .nav-menu li {
         padding: 1rem 0;
     }
-    .nav-menu li a{
+
+    .nav-menu li a {
         font-size: 2rem;
     }
-    .hambugger{
-        display: initial;
+
+    .hambugger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        z-index: 2; /* Make sure hamburger is clickable over other elements */
     }
 }

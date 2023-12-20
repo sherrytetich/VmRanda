@@ -8,7 +8,7 @@
 }
 
 body{
-  background-image: url('/public/images/img1.jpg');
+  background-image: url('/public/images/background.png');
   background-size: cover;
   background-position: center ;
   background-attachment: fixed;
@@ -16,7 +16,7 @@ body{
 
 
 h1,h2,h3,p,a{
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 ul{
@@ -26,7 +26,7 @@ ul{
   padding: 12px 32px;
   font-size: 1rem;
   text-transform: uppercase;
-  background: #596CEF;
+  background: #713ed8;
   color: #fff;
   border: 1px solid #fff;
   font-weight: 600;
@@ -35,10 +35,10 @@ ul{
 }
 .btn-light{
   background: transparent;
-  color: rgb(70, 99, 204);
+  background: rgb(91, 76, 142);
 }
 .btn:hover{
-  background: rgb(41, 95, 210);
+  background: rgb(91, 76, 142);
   color:#fff;
   transition:0.3s
 }

@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="hero" id="hero">
      <div className="mask">
-        <img className="into-img" src="/images/img1.jpg"/>
+        <img className="into-img" src="/images/background.png" alt=""/>
      </div>
      <div className="content">
         <h2 className="first">Are you tired of searching for good advocates?</h2>
